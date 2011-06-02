@@ -6,6 +6,7 @@
   		  var item=document.getElementById('new').style.display = 'block';
 			var item2=document.getElementById('new1').style.display = 'block';
 			var item2=document.getElementById('youtube').style.display = 'none';
+						document.getElementById('ppt').style.display = 'none';
  		}
 
 		function hide2(){
@@ -18,6 +19,7 @@
  		document.getElementById("new1").style.display = "none";
  		 var item=document.getElementById('new').style.display = 'none';
  		 		document.getElementById("youtube").style.display = 'block';
+ 		 					document.getElementById('ppt').style.display = 'none';
  		};
  		//Extracts the 9 letter keyword from youtube url
  		function Url()
@@ -40,5 +42,15 @@
   		  var item=document.getElementById('new').style.display = 'none';
 			var item2=document.getElementById('new1').style.display = 'none';
 			var item2=document.getElementById('youtube').style.display = 'none';
+			document.getElementById('ppt').style.display = 'none';
+ 		};
+ 		function hide4(){
+		  var element = document.getElementById("content");
+		  element.style.display = "none";
+  		  document.getElementById('new').style.display = 'none';
+			document.getElementById('new1').style.display = 'none';
+			document.getElementById('youtube').style.display = 'none';
+			document.getElementById('ppt').style.display = 'block';
+
  		};
 
