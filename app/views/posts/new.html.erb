@@ -1,0 +1,52 @@
+<body><h1>New post</h1>
+<!-- Creating for for the user to enter his/her desired anme of the bookmark. The time is fetched from the backend.All the user has to do is Click on Add Bookmark-->
+<form action="new" class="new_person" id="new_person" method="post">
+  <div style="margin:0;padding:0;display:inline">
+    <input name="authenticity_token" type="hidden" value="NrOp5bsjoLRuK8IW5+dQEYjKGUJDe7TQoZVvq95Wteg=" />
+  </div>
+  <!-- Creating the attributes of the form -->
+  <label for="person_first_name">Time</label>:&nbsp
+  <input id="person_first_name" name="post[name]" size="30" type="text"/><br />
+
+  <label for="person_last_name">Topic</label>:
+  <input id="person_last_name" name="post[title]" size="30" type="text" /><br />
+
+  <input id="person_submit" name="commit" type="submit" value="Create BookMark" />
+</form>
+
+<!-- Fetching the flow Player from the respective URL -->
+<a
+			 href="http://pseudo01.hddn.com/vod/demo.flowplayervod/flowplayer-700.flv"
+			 style="display:block;width:520px;height:330px"
+			 id="player">
+		</a>
+
+		<!-- this will install flowplayer inside previous A- tag. -->
+	<input type="button" onclick="chane()"  value="AddBookmark"/><br />
+
+		<script>
+
+			var player=flowplayer("player", "../swf/flowplayer-3.2.7.swf",{clip: {
+			autoPlay:false,
+			autoBuffering:true,
+			start:5,
+
+		onStart: function() {
+			//alert("onStart defined in configuration");
+  //flowplayer().seek(3500);
+		}
+	}});
+	function chane(){
+document.getElementById("person_first_name").value =player.getTime();
+  player.pause();
+}
+
+	function change(a){
+	player.seek(a);
+}
+
+
+
+	</script>
+	</body>
+
