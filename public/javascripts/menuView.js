@@ -7,7 +7,7 @@
 			var item2=document.getElementById('new1').style.display = 'block';
 			var item2=document.getElementById('youtube').style.display = 'none';
 						document.getElementById('ppt').style.display = 'none';
- 		}
+ 		};
 
 		function hide2(){
 		  var item1=document.getElementById('leftmenu').style.display = 'block';
@@ -51,6 +51,18 @@
 			document.getElementById('new1').style.display = 'none';
 			document.getElementById('youtube').style.display = 'none';
 			document.getElementById('ppt').style.display = 'block';
+
+ 		};
+
+
+ 		function imageS(j)
+ 		{
+ 			var x="";
+
+ 				x=x+"/images/pausch/img"+(j-1)+".gif";
+
+ 			document.getElementById('imageSource').src=x;
+
 
  		};
 

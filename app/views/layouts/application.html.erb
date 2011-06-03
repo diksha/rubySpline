@@ -18,6 +18,8 @@
 
 </head><!-- Exiting Head Tag -->
 <body onLoad="hide1()"><!-- Beginning of Body Tag -->
+
+
 	<div  id="box" ><!-- Using div tag to create a box-like element with id=box -->
 <!-- Creating a Div box which stores the properties of the header part which includes the Main heading(ie DNS PLAYER) and a Top Menu Bar(id=list-nav-->
 		<div id="title" >
@@ -31,7 +33,7 @@
 		</div>
 <br>
 <!-- Creating a Div Panel which includes 2 Div attributes. One is for taking care of the left naviagation bar and the other one for Storing the 		welcome contents -->
-		<div id="workspace" style="width:200px;height:300px;border:1px solid #ba0202;float:left;">
+		<div id="workspace" style="width:200px;border:1px solid #ba0202;float:left;">
 		<ul class="hovermenu" style="list-style:none;text-decoration:none;">
 		<!-- Creating 2 buttons- Home and Video. On click of Video, @ addtional options appear-ADD BOOKMARK and SHOW BOOKMARK and 					another Div tag opens up which shall act as the panel for the video ------------------->
 		  	    <li><button style="border:0;background:none;padding:0;margin:0; color:gray; font-weight:bold; font-size:16px" onclick="hide0()">Home</button></li>
@@ -51,7 +53,28 @@
 		</ul>
 		</div>
 				<!--<div class="hidden" id="new"   style="display:none;float:right;">-->
-				<div  id="new1" style="display:none;position:fixed;top:145px;right:500px;width:600px;height:700px;border:1px #ba0202;">	<%= yield %></div>
+				<div  id="new1" style="display:none;position:fixed;top:145px;right:500px;width:600px;border:1px #ba0202;">	<%= yield %>
+				<div >
+<!--<iframe src="https://docs.google.com/present/view?id=0AUnWV2Qln9zkZGZwMzY0NHhfMGZidm00N2Rm&hl=en_GB" width="500px" height="500px"></iframe>-->
+
+
+
+
+
+<!--<iframe src="https://docs.google.com/present/view?id=0AUnWV2Qln9zkZGZwMzY0NHhfMGZidm00N2Rm&hl=en_GB" width="500px" height="500px"></iframe>-->
+<img style="position:fixed;top:100px;right:320px;width:460px;border:1px #ba0202;" src="/images/pausch/img0.gif" id="imageSource" >
+<%= render 'layouts/table' %>
+
+
+
+
+
+
+
+
+
+</div>
+				</div>
 
 <!-- DIV tag for containing the welcome text on the Screen Image -->
 		<div class="shadow">
@@ -68,7 +91,9 @@
 		<iframe width="560" height="349" frameborder="0" allowfullscreen id="src1"></iframe></div>
 
 <div id="ppt">
-<iframe src="https://docs.google.com/present/view?id=0AUnWV2Qln9zkZGZwMzY0NHhfMGZidm00N2Rm&hl=en_GB" width="500px" height="500px"></iframe>
+
+
+
 </div>
 
 

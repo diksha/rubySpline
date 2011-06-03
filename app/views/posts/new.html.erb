@@ -16,9 +16,9 @@
 
 <!-- Fetching the flow Player from the respective URL -->
 <a
-			 href="http://pseudo01.hddn.com/vod/demo.flowplayervod/flowplayer-700.flv"
-			 style="display:block;width:520px;height:330px"
-			 id="player">
+			 href="http://www.thewellnessbridge.com/Flash/Step2.flv"
+			 style="display:block;width:300px;height:100px"
+			 id="player" >
 		</a>
 
 		<!-- this will install flowplayer inside previous A- tag. -->
@@ -26,16 +26,24 @@
 
 		<script>
 
+
 			var player=flowplayer("player", "../swf/flowplayer-3.2.7.swf",{clip: {
 			autoPlay:false,
 			autoBuffering:true,
 			start:5,
 
+
 		onStart: function() {
 			//alert("onStart defined in configuration");
   //flowplayer().seek(3500);
+
+	//	document.getElementById("person_first_name").value =player.getTime();
 		}
-	}});
+
+
+
+	}
+	});
 	function chane(){
 document.getElementById("person_first_name").value =player.getTime();
   player.pause();
