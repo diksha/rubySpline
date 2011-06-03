@@ -49,8 +49,14 @@ document.getElementById("person_first_name").value =player.getTime();
   player.pause();
 }
 
-	function change(a){
+	function change(a,j){
 	player.seek(a);
+	var x="";
+
+ 				x=x+"/images/pausch/img"+(j-1)+".gif";
+
+ 			document.getElementById('imageSource').src=x;
+
 }
 
 
